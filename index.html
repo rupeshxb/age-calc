@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Age</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="complete-wrapper">
+      <div class="enter-age">
+        <div class="container">
+          <div class="title">
+            Enter your date of birth<br />
+            <span>( Use proper format )</span>
+          </div>
+          <div class="input-field">
+            <div class="field-single">
+              <div class="row">
+                <div class="col-md-4 col-12 col-12">
+                  <input
+                    id="years-value"
+                    class="form-control"
+                    placeholder="YYYY"
+                  />
+                  <span id="years-alert"></span>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input
+                    id="months-value"
+                    class="form-control"
+                    placeholder="MM"
+                  />
+                  <span id="months-alert"></span>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input
+                    id="days-value"
+                    class="form-control"
+                    placeholder="DD"
+                  />
+                  <span id="days-alert"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-single">
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <input
+                    id="hours-value"
+                    class="form-control"
+                    placeholder="hh"
+                  />
+                  <span id="hours-alert"></span>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input
+                    id="mins-value"
+                    class="form-control"
+                    placeholder="mm"
+                  />
+                  <span id="mins-alert"></span>
+                </div>
+                <div class="col-md-4 col-12">
+                  <input
+                    id="secs-value"
+                    class="form-control"
+                    placeholder="ss"
+                  />
+                  <span id="secs-alert"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button onclick="calcAge(); formValidation();" type="submit">
+              Calculate
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="date-wrapper">
+        <div class="container">
+          <div id="date">
+            Your age is <span id="years"></span> years,
+            <span id="months"></span> months, <span id="days"></span> days,
+            <span id="hours"></span> hours, <span id="mins"></span> minutes, and
+            <span id="secs"></span> seconds.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS starts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- SCRIPTS ends -->
+  </body>
+</html>

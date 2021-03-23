@@ -100,6 +100,16 @@
 
 .date-wrapper {
   background-color: #0d1117;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .date-wrapper #date {
@@ -116,6 +126,54 @@
 .date-wrapper #date span {
   color: red;
   font-weight: 600;
+}
+
+.date-wrapper .creator {
+  text-align: center;
+  padding: 5px 0px;
+  color: grey;
+  font-size: 1.1rem;
+}
+
+.date-wrapper .creator a {
+  color: #7100ce;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.date-wrapper .creator a:hover {
+  color: #6500b8;
+}
+
+.date-wrapper .social-media {
+  text-align: center;
+  padding: 0px 0px 25px;
+}
+
+.date-wrapper .social-media ul {
+  width: 100px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.date-wrapper .social-media ul li a i {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.date-wrapper .social-media ul li a i:hover {
+  color: red;
 }
 
 @media (max-width: 992px) {

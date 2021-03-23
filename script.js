@@ -1,7 +1,7 @@
 // Set height of "enter-age" div
 
 if ($(window).width() > 768) {
-  var windowHeight = $(".complete-wrapper").height();
+  var windowHeight = $("body,html").height();
   var enterAgeHeight = $(".enter-age").height();
   var dateWrapperHeight = windowHeight - enterAgeHeight;
   $(".date-wrapper").height(dateWrapperHeight);

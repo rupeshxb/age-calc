@@ -79,6 +79,9 @@
 
 .date-wrapper {
   background-color: #0d1117;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   // height: -moz-available; /* WebKit-based browsers will ignore this. */
   // height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   // height: fill-available;
@@ -94,6 +97,44 @@
     span {
       color: red;
       font-weight: 600;
+    }
+  }
+  .creator {
+    text-align: center;
+    padding: 5px 0px;
+    color: grey;
+    font-size: 1.1rem;
+    a {
+      color: rgb(113, 0, 206);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      color: rgb(101, 0, 184);
+    }
+  }
+  .social-media {
+    text-align: center;
+    padding: 0px 0px 25px;
+    ul {
+      width: 100px;
+      margin: 0 auto;
+      list-style-type: none;
+      padding-left: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        a {
+          i {
+            color: white;
+            font-size: 1.4rem;
+          }
+          i:hover {
+            color: red;
+          }
+        }
+      }
     }
   }
 }

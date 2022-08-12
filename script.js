@@ -46,6 +46,10 @@ function calcAge() {
   document.getElementById("mins").innerHTML = mins;
   document.getElementById("secs").innerHTML = secs;
   document.getElementById("date").style.display = "block";
+ 
+  if (isNaN(yearsInt)){
+    document.getElementById("years").innerHTML = 0;
+ };
 }
 
 setInterval(calcAge, 1000);

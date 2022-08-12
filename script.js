@@ -48,7 +48,7 @@ function calcAge() {
   document.getElementById("date").style.display = "block";
  
   if (isNaN(yearsInt)){
-    document.getElementById("years").innerHTML = 0;
+    document.getElementById("years").innerHTML = '_____';
  };
 }
 

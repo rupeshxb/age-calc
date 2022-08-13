@@ -48,17 +48,13 @@ function calcAge() {
   document.getElementById("date").style.display = "block";
  
   // To display a blank space when date is not entered or when value is NAN
-  if (isNaN(yearsInt)){
+
+  if (isNaN(yearsInt) || isNaN(monthsInt) || isNaN(daysInt)){
     document.getElementById("years").innerHTML = '_____';
-  };
-  if(isNaN(monthsInt))
-  {
     document.getElementById("months").innerHTML = '_____';
-  }
-  if(isNaN(daysInt))
-  {
     document.getElementById("days").innerHTML = '_____';
-  }
+  };
+  
   if(isNaN(hoursInt))
   {
     document.getElementById("hours").innerHTML = '_____';

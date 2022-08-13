@@ -47,9 +47,30 @@ function calcAge() {
   document.getElementById("secs").innerHTML = secs;
   document.getElementById("date").style.display = "block";
  
+  // To display a blank space when date is not entered or when value is NAN
   if (isNaN(yearsInt)){
     document.getElementById("years").innerHTML = '_____';
- };
+  };
+  if(isNaN(monthsInt))
+  {
+    document.getElementById("months").innerHTML = '_____';
+  }
+  if(isNaN(daysInt))
+  {
+    document.getElementById("days").innerHTML = '_____';
+  }
+  if(isNaN(hoursInt))
+  {
+    document.getElementById("hours").innerHTML = '_____';
+  }
+  if(isNaN(minsInt))
+  {
+    document.getElementById("mins").innerHTML = '_____';
+  }
+  if(isNaN(secsInt))
+  {
+    document.getElementById("secs").innerHTML = '_____';
+  }
 }
 
 setInterval(calcAge, 1000);

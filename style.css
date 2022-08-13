@@ -22,7 +22,6 @@
   font-family: "Raleway", sans-serif;
   background: #161b22;
 }
-
 .enter-age .title {
   text-align: center;
   font-size: 35px;
@@ -30,7 +29,6 @@
   margin-bottom: 15px;
   padding-top: 15px;
 }
-
 .enter-age .title span {
   font-size: 12px;
   font-weight: 300;
@@ -38,50 +36,36 @@
   letter-spacing: 0.5px;
   font-family: monospace;
 }
-
 .enter-age .input-field {
   margin: 0px 150px;
 }
-
 .enter-age .input-field .field-single {
   padding-top: 15px;
 }
-
 .enter-age .input-field .field-single input {
   font-family: auto;
 }
-
-.enter-age .input-field .field-single input::-webkit-input-placeholder {
+.enter-age .input-field .field-single input::-moz-placeholder {
   font-family: "Raleway";
 }
-
 .enter-age .input-field .field-single input:-ms-input-placeholder {
   font-family: "Raleway";
 }
-
-.enter-age .input-field .field-single input::-ms-input-placeholder {
-  font-family: "Raleway";
-}
-
 .enter-age .input-field .field-single input::placeholder {
   font-family: "Raleway";
 }
-
 .enter-age .input-field .field-single span {
   text-align: center;
   width: 100%;
   display: block;
 }
-
 .enter-age .input-field .field-single:first-child {
   border-top: 1px solid dimgrey;
 }
-
 .enter-age .button {
   padding: 15px 0px;
   text-align: center;
 }
-
 .enter-age .button button {
   width: 100px;
   line-height: 40px;
@@ -93,25 +77,16 @@
   font-weight: 500;
   background: #30ad48;
 }
-
 .enter-age .button button:hover {
   background: #2c9841;
 }
 
 .date-wrapper {
   background-color: #0d1117;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .date-wrapper #date {
   text-align: CENTER;
   width: 100%;
@@ -122,56 +97,41 @@
   font-family: Mukta, sans-serif;
   display: none;
 }
-
 .date-wrapper #date span {
   color: red;
   font-weight: 600;
 }
-
 .date-wrapper .creator {
   text-align: center;
   padding: 5px 0px;
   color: grey;
   font-size: 1.1rem;
 }
-
 .date-wrapper .creator a {
-  color: #7100ce;
+  color: rgb(113, 0, 206);
   text-decoration: none;
   cursor: pointer;
 }
-
 .date-wrapper .creator a:hover {
-  color: #6500b8;
+  color: rgb(101, 0, 184);
 }
-
 .date-wrapper .social-media {
   text-align: center;
   padding: 0px 0px 25px;
 }
-
 .date-wrapper .social-media ul {
   width: 100px;
   margin: 0 auto;
   list-style-type: none;
   padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .date-wrapper .social-media ul li a i {
   color: white;
   font-size: 1.4rem;
 }
-
 .date-wrapper .social-media ul li a i:hover {
   color: red;
 }
@@ -185,10 +145,8 @@
     padding: 40px 0px;
   }
 }
-
 @media (max-width: 576px) {
   .enter-age .input-field {
     margin: 0px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

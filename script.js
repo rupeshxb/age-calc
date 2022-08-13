@@ -88,26 +88,46 @@ function formValidation() {
   var minsInt = parseInt(minsValue);
   var secsInt = parseInt(secsValue);
 
+  // To display alert messages for incorrect and empty values
+
   if (yearsValue.length !== 4) {
     document.querySelector("#years-alert").innerHTML = "Incorrect year format";
+    if (yearsValue.length == 0){
+      document.querySelector("#years-alert").innerHTML = "Must enter a value";
+    }
   }
-  if (monthsValue.length !== 2 || monthsValue > 12 || monthsValue == 00) {
-    document.querySelector("#months-alert").innerHTML =
-      "Incorrect month format";
+  
+  if (monthsValue.length !== 2 || monthsValue > 12 || monthsValue <= 00) {
+    document.querySelector("#months-alert").innerHTML = "Incorrect month format";
+    if (monthsValue.length == 0){
+      document.querySelector("#months-alert").innerHTML = "Must enter a value";
+    }
   }
+
   if (daysValue.length !== 2 || daysValue > 31 || daysValue == 00) {
     document.querySelector("#days-alert").innerHTML = "Incorrect days format";
+    if (daysValue.length == 0){
+      document.querySelector("#days-alert").innerHTML = "Must enter a value";
+    }
   }
+
   if (hoursValue.length !== 2 || hoursValue > 23) {
     document.querySelector("#hours-alert").innerHTML = "Incorrect hours format";
+    if(hoursValue.length == 0){
+      document.querySelector("#hours-alert").innerHTML = "";
+    }
   }
   if (minsValue.length !== 2 || minsValue > 59) {
-    document.querySelector("#mins-alert").innerHTML =
-      "Incorrect minutes format";
+    document.querySelector("#mins-alert").innerHTML = "Incorrect minutes format";
+    if(minsValue.length == 0){
+      document.querySelector("#mins-alert").innerHTML = "";
+    }
   }
   if (secsValue.length !== 2 || secsValue > 59) {
-    document.querySelector("#secs-alert").innerHTML =
-      "Incorrect seconds format";
+    document.querySelector("#secs-alert").innerHTML = "Incorrect seconds format";
+      if(secsValue.length == 0){
+        document.querySelector("#secs-alert").innerHTML = "";
+      }
   }
 }
 
